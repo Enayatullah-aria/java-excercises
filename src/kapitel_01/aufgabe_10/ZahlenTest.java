@@ -26,6 +26,7 @@ public class ZahlenTest {
         }
     }
     public void defGanzeZahlen() {
+        System.out.println(z1);
         z1.anzeige();
         z2.anzeige();
         GanzeZahlen t = GanzeZahlen.ggTeiler(z1, z2);
@@ -65,7 +66,7 @@ public class ZahlenTest {
         r1.multipl(r2).anzeige();
     }
     // Objekte der Klasse erzeugen
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         ZahlenTest test1 = new ZahlenTest(GANZEZAHLEN, 6, -9);
         ZahlenTest test2 = new ZahlenTest(RATIONALEZAHLEN, 6, -9);
     }
