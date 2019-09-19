@@ -6,6 +6,12 @@ public class GanzeZahlen {
     public GanzeZahlen(int z) {
         this.z = z;
     }
+
+    @Override
+    public String toString() {
+        return "GanzeZahlen(" + this.z + ")";
+    }
+
     public int getZahl() {
         return this.z;
     }
@@ -16,15 +22,21 @@ public class GanzeZahlen {
         this.z = -this.z;
         return this;
     }
+
+
     public boolean gleich(GanzeZahlen a) {
-        if(this.z == a.z)
+        if(this.z == a.z) {
             return true;
-        return false;
+        } else {
+            return false;
+        }
     }
     public boolean kleiner(GanzeZahlen a) {
-        if(this.z < a.z)
+        if(this.z < a.z) {
             return true;
-        return false;
+        } else {
+            return false;
+        }
     }
     public static GanzeZahlen ggTeiler(GanzeZahlen a,
                                        GanzeZahlen b) {
