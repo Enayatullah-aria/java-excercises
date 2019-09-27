@@ -1,4 +1,4 @@
-package kapitel_02.aufgabe_10;
+package kapitel_02.aufgabe_2_10;
 
 public class Blumen {
     protected final static int ROSE = 0;
